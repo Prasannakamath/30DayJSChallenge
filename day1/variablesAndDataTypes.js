@@ -18,3 +18,7 @@ let bool1 = false;
 let obj = {};
 let arr = [];
 console.table([typeof num1, typeof str1, typeof bool1, typeof obj, typeof arr]);
+
+//task5: reassign value to already initialised variable of type 'let' and print the value in console.
+str = "STRING";
+console.log(str);
