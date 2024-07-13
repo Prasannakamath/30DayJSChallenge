@@ -9,3 +9,12 @@ console.log(str);
 //task3: declare a variable using 'const', assign it a boolean value, log its value to console.
 const bool = true;
 console.log(bool);
+
+//task4: create variables of different data types(number, string, boolean, object, array)
+//log each variable's type using 'typeof' operator
+let num1 = 10;
+let str1 = "PK";
+let bool1 = false;
+let obj = {};
+let arr = [];
+console.table([typeof num1, typeof str1, typeof bool1, typeof obj, typeof arr]);
