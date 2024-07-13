@@ -5,3 +5,7 @@ console.log(num);
 //Task2: declare a variable using 'let', assign it a string, log its value to console
 let str = "Prasanna Kamath";
 console.log(str);
+
+//task3: declare a variable using 'const', assign it a boolean value, log its value to console.
+const bool = true;
+console.log(bool);
