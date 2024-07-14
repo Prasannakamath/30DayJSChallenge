@@ -56,3 +56,10 @@ let num3 = 2;
 let num4 = "2";
 console.log(`${num3} == ${num4} : ${num3 == num4}`);
 console.log(`${num3} === ${num4} : ${num3 === num4}`);
+
+//task11: use '&&' operator to combine result of two conditions and log the result to console.
+console.log(
+  `is num4 a number and its value equal to 2? : ${
+    num4 == 2 && typeof num4 == "number"
+  }`
+);
