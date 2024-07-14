@@ -74,3 +74,10 @@ console.log(
 //task13: use '!' operator to negate a condition and log the result to console.
 let num5 = null;
 console.log(`is num4 contain null value? : ${!num5}`);
+
+//task14: use ternary operator to check if a number is positive or negative and log the result to console.
+function isPositive(a) {
+  return a >= 0 ? true : false;
+}
+
+console.log(`is -4 positive? : ${isPositive(-4)}`);
