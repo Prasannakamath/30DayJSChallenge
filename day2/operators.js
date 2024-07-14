@@ -11,3 +11,10 @@ function substract(a, b) {
 }
 
 console.log(substract(5, 2));
+
+//task3: write a program to multiply two numbers and log the result to console.
+function multiply(a,b){
+    return a*b;
+}
+
+console.log(multiply(5,4));
