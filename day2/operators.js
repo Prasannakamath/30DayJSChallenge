@@ -50,3 +50,9 @@ console.log(`is ${num1} lesser than ${num2} ? : ${num1 < num2}`);
 //task9: compare two numbers using '<=' and '>=' operators and log the results in console
 console.log(`${num1} >= ${num2} : ${num1 >= num2}`);
 console.log(`${num1} <= ${num2} : ${num1 <= num2}`);
+
+//task10: compare two numbers using '==' and '===' and log the results in console.
+let num3 = 2;
+let num4 = "2";
+console.log(`${num3} == ${num4} : ${num3 == num4}`);
+console.log(`${num3} === ${num4} : ${num3 === num4}`);
