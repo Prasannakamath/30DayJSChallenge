@@ -32,3 +32,9 @@ function returnRemainder(a, b) {
 }
 
 console.log(returnRemainder(10, 9));
+
+//task6: add a number to a variable using '+=' operator and log the result to console.
+let num1 = 12;
+let num2 = 4;
+num1 += num2;
+console.log(num1);
