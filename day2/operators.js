@@ -25,3 +25,10 @@ function divide(a, b) {
 }
 
 console.log(divide(4, 0.01));
+
+//task5: write a program to find remainder when one number is divided by another and log the result to console.
+function returnRemainder(a, b) {
+  return a % b;
+}
+
+console.log(returnRemainder(10, 9));
