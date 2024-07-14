@@ -46,3 +46,7 @@ console.log(num1);
 //task8: compare two numbers using '>' and '<' and log the results in console.
 console.log(`is ${num1} greater than ${num2} ? : ${num1 > num2}`);
 console.log(`is ${num1} lesser than ${num2} ? : ${num1 < num2}`);
+
+//task9: compare two numbers using '<=' and '>=' operators and log the results in console
+console.log(`${num1} >= ${num2} : ${num1 >= num2}`);
+console.log(`${num1} <= ${num2} : ${num1 <= num2}`);
