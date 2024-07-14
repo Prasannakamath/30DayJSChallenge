@@ -38,3 +38,7 @@ let num1 = 12;
 let num2 = 4;
 num1 += num2;
 console.log(num1);
+
+//task7: substract a number from a variable using '-=' operator and log the result to console.
+num1 -= num2;
+console.log(num1);
