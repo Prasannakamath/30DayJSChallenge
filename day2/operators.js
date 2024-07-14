@@ -13,8 +13,15 @@ function substract(a, b) {
 console.log(substract(5, 2));
 
 //task3: write a program to multiply two numbers and log the result to console.
-function multiply(a,b){
-    return a*b;
+function multiply(a, b) {
+  return a * b;
 }
 
-console.log(multiply(5,4));
+console.log(multiply(5, 4));
+
+//task4: write a program to divide two numbers and log the result to console.
+function divide(a, b) {
+  return a / b;
+}
+
+console.log(divide(4, 0.01));
