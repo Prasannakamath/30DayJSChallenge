@@ -70,3 +70,7 @@ console.log(
     num4 == 2 || typeof num4 == "number"
   }`
 );
+
+//task13: use '!' operator to negate a condition and log the result to console.
+let num5 = null;
+console.log(`is num4 contain null value? : ${!num5}`);
