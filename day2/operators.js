@@ -42,3 +42,6 @@ console.log(num1);
 //task7: substract a number from a variable using '-=' operator and log the result to console.
 num1 -= num2;
 console.log(num1);
+
+//task8: compare two numbers using '>' and '<' operators and log the result to console.
+console.log(`is ${num1} greater than ${num2} ? : ${num1 > num2}`);
