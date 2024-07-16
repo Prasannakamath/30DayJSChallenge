@@ -10,3 +10,10 @@ function calculateSumOfNumbersUpto(endNum) {
 }
 
 console.log(calculateSumOfNumbersUpto(10));
+
+//task4: Print numbers 10 to 1 using while loop
+let i = 10;
+while (i >= 1) {
+  console.log(i);
+  i--;
+}
