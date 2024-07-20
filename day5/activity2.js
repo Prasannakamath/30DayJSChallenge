@@ -12,3 +12,11 @@ function findMax(num1, num2) {
 let num1 = 11.99;
 let num2 = 12;
 console.log(`which is max among ${num1} and ${num2}: ${findMax(num1, num2)}`);
+
+//task4: Concatenate 2 strings and return result using function.
+function StrConcatenate(str1, str2) {
+  return str1 + str2;
+}
+let str1 = "PRASANNA";
+let str2 = " KAMATH";
+console.log(StrConcatenate(str1, str2));
