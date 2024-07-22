@@ -3,3 +3,8 @@
 let arr = [1, 2, 3, 4, 5];
 let newArr = arr.map((ele) => ele * 2);
 console.log(newArr);
+
+//task8: use filter method to create new array with only even elements and log newarray to console.
+let testArr = [2, 3, 5, 6, 7, 8];
+let evenArr = testArr.filter((ele) => ele % 2 === 0);
+console.log(evenArr);
