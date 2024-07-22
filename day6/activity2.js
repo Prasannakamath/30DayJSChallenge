@@ -2,3 +2,7 @@
 let arr = [1, 2, 3, 4, 5];
 arr.push(6);
 console.log(arr);
+
+//task4: Use POP method to remove last element from array and log updated array to console.
+arr.pop();
+console.log(arr);
