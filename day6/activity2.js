@@ -6,3 +6,7 @@ console.log(arr);
 //task4: Use POP method to remove last element from array and log updated array to console.
 arr.pop();
 console.log(arr);
+
+//task5: use SHIFT method to remove first element from array and log updated array to console.
+arr.shift();
+console.log(arr);
