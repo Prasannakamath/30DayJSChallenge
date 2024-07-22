@@ -10,3 +10,7 @@ console.log(arr);
 //task5: use SHIFT method to remove first element from array and log updated array to console.
 arr.shift();
 console.log(arr);
+
+//task6: Use UNSHIFT method to add new element to begining of array and log updated array to console.
+arr.unshift(1);
+console.log(arr);
