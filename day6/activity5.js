@@ -5,6 +5,9 @@ let arr = [
   [7, 8, 9],
 ];
 console.log(arr);
+
+//task13: access and log specific element from 2D array to console.
+
 function printMatrix(arr) {
   let matrix = [];
   for (let i = 0; i < arr.length; i++) {
