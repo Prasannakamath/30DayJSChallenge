@@ -8,3 +8,7 @@ console.log(newArr);
 let testArr = [2, 3, 5, 6, 7, 8];
 let evenArr = testArr.filter((ele) => ele % 2 === 0);
 console.log(evenArr);
+
+//task9: use reduce method to calculate sum of all elements in array and log result to console.
+let sum = arr.reduce((acc, it) => acc + it, 0);
+console.log(sum);
