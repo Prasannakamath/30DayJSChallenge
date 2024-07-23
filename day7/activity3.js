@@ -18,3 +18,10 @@ let library = {
 };
 
 console.log(library);
+
+//task6: Access and log the name of the library.
+//Access and log all the book titles in the library.
+console.log(`Name of this library is: ${library.name}`);
+library.books.forEach((book) =>
+  console.log(`This library contains a book titled: ${book.title}`)
+);
