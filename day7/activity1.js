@@ -6,3 +6,8 @@ let book = {
   year: 2020,
 };
 console.log(book);
+
+//task2: Access and log the title and author properties of book object.
+console.log(
+  `the Book titled ${book.title} is written by author: ${book.author}`
+);
