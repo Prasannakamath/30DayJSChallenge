@@ -22,3 +22,13 @@ book.anonymousFunction();
 console.log("arrow function output");
 book.arrowFunction(); // returns undefined because arrow functions do not have 'this' keywords.
 //reference: https://javascript.info/arrow-functions
+
+//task4: write a method to book Object that takes year as a parameter and updates the year property of book.
+//log updated Object to console.
+
+book.updateYear = function (newYear) {
+  this.year = newYear;
+};
+
+book.updateYear(1998);
+console.log(book);
