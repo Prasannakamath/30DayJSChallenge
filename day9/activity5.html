@@ -24,8 +24,20 @@
     let i = 0;
     trigger.addEventListener("click", (ev) => {
       i++;
+      console.log(`Event detected: ${ev}`);
       console.log(`button is clicked times: ${i}`);
       toggleText(textEle);
+    });
+
+    //task10: Add a mouse hover event listener to an element that changes its border color.
+    trigger.addEventListener("mouseover", (ev) => {
+      console.log(`Event detected: ${ev}`);
+      trigger.style.borderRadius = "20px";
+      trigger.style.borderColor = "red";
+      //document.body.style.backgroundColor = "black";
+    });
+    trigger.addEventListener("mouseout", (ev) => {
+      trigger.removeAttribute("style");
     });
   </script>
 </html>
