@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Activity4</title>
+  </head>
+  <style>
+    .highlight {
+      background-color: gold;
+      color: maroon;
+    }
+  </style>
+  <body>
+    <h1>Task 5</h1>
+    <h2 class="highlight">task 5</h2>
+  </body>
+  <script>
+    //task5: change of the attributes of an html element.
+    //task6: add and remove a css class from an html element.
+    const h1 = document.querySelector("h1");
+    h1.setAttribute("class", "highlight");
+    const h2 = document.querySelector("h2");
+    h2.removeAttribute("class");
+  </script>
+</html>
