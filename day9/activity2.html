@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Manipulation Activity2</title>
   </head>
-  <body></body>
+  <body>
+    <ul id="myList">
+      <li>item 1</li>
+      <li>item 2</li>
+    </ul>
+  </body>
   <script>
     //task3: create new div element with some text content.
     //append it to body.
@@ -17,6 +22,16 @@
     );
     h2.appendChild(textNode);
     div.appendChild(h2);
+
+    //only if the element doesnt already exists in DOM.
     document.body.appendChild(div);
+
+    //task4: create new 'li' item and add it to existing 'ul'.
+    const list = document.getElementById("myList");
+    const newItem = document.createElement("li");
+    const itemText = document.createTextNode("item 3");
+    newItem.appendChild(itemText);
+    list.appendChild(newItem);
+    console.log(list);
   </script>
 </html>
