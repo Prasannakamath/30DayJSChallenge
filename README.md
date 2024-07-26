@@ -8,3 +8,4 @@ this folder consists of the tasks I attempted as a part of ongoing 30 days javas
 - Day6: [Arrays](day6/)
 - Day7: [Objects](day7/)
 - Day8: [ES6+ Features](day8/)
+- Day9: [DOM Manipulation](day9/)
