@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Activity5</title>
+  </head>
+  <body>
+    <button id="triggerBtn">Trigger</button>
+    <p>Test</p>
+  </body>
+  <script>
+    function toggleText(ele) {
+      if (ele.textContent === "Prasanna") {
+        console.log("inside if");
+        ele.textContent = "KAMATH";
+      } else {
+        ele.textContent = "Prasanna";
+      }
+    }
+    //task9: addEventListner for button click event
+    const trigger = document.getElementById("triggerBtn");
+    const textEle = document.querySelector("p");
+    let i = 0;
+    trigger.addEventListener("click", (ev) => {
+      i++;
+      console.log(`button is clicked times: ${i}`);
+      toggleText(textEle);
+    });
+  </script>
+</html>
