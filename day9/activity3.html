@@ -17,5 +17,10 @@
     //task5: Select an HTML element and remove from the DOM.
     const h1Item = document.getElementById("head");
     document.body.removeChild(h1Item);
+
+    //task6: remove last child of specific html element from DOM.
+    const myList = document.getElementById("myList");
+    const lastItem = myList.lastElementChild;
+    myList.removeChild(lastItem);
   </script>
 </html>
