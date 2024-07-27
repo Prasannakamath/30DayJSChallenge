@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling activity2</title>
+  </head>
+  <style>
+    .container {
+      background-color: yellow;
+      border: 5px solid red;
+      padding-left: 30em;
+    }
+    .changeColor {
+      background-color: black;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p>Hover over me to enjoy rainbow</p>
+    </div>
+  </body>
+  <script>
+    //task3: add a mouseover event listener to an element that changes its background color.
+    let rainbowColors = {
+      0: "black",
+      1: "red",
+      2: "blue",
+      3: "pink",
+      4: "maroon",
+      5: "purple",
+      6: "grey",
+    };
+    const containerClassEles = document.getElementsByClassName("container");
+    containerClassEles[0].addEventListener("mouseover", (ev) => {
+      let rand = Math.round(Math.random() * 10);
+      console.log(ev);
+      console.log(
+        `color associated with random number ${rand} is ${rainbowColors[rand]}`
+      );
+      document.body.style.backgroundColor = rainbowColors[rand];
+    });
+  </script>
+</html>
