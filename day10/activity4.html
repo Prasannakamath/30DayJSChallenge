@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form action is the endpoint where the form data will be sent on submit. -->
+    <form id="loginForm">
+      <label for="username">username</label>
+      <input
+        type="text"
+        placeholder="username"
+        name="username"
+        id="username"
+      /><br />
+      <label for="password">password</label>
+      <input
+        type="password"
+        placeholder="password"
+        name="password"
+        id="password"
+      />
+      <button type="submit">Login</button>
+    </form>
+  </body>
+  <script>
+    //task7: Add a submit event listener to a form that prevents default submission.
+    //log form data to console.
+    const submitBtn = document.getElementById("loginForm");
+    submitBtn.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const username = document.getElementById("username");
+      const password = document.getElementById("password");
+      if (username.value === "" || password.value === "") {
+        alert("All fields are mandatory");
+      } else {
+        console.log(
+          `form submitted with data: {username:${username.value}, password:${password.value} }`
+        );
+      }
+      username.value = "";
+      password.value = "";
+    });
+  </script>
+</html>
