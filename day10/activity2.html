@@ -40,5 +40,10 @@
       );
       document.body.style.backgroundColor = rainbowColors[rand];
     });
+
+    //task4: Add a mouseout event listner to reset the background color
+    containerClassEles[0].addEventListener("mouseout", (ev) => {
+      document.body.style.backgroundColor = "white";
+    });
   </script>
 </html>
