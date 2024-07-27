@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling</title>
+  </head>
+  <body>
+    <button id="btn">Click me</button>
+    <p id="para">This is paragraph before click.</p>
+  </body>
+  <script>
+    //task1: add a click event listener to a button that changes text of paragraph
+    const btnElement = document.getElementById("btn");
+    btnElement.addEventListener("click", (ev) => {
+      document.getElementById("para").innerHTML =
+        "This is a paragraph AFTER click.";
+    });
+  </script>
+</html>
