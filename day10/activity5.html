@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling activity5</title>
+  </head>
+  <body>
+    <ul id="myList">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+  </body>
+  <script>
+    //task9 and 10: Add click event listener on a list and log the selected list item to console.
+    //using event delegation.
+    //event delegation- https://medium.com/@bretdoucette/part-4-what-is-event-delegation-in-javascript-f5c8c0de2983#.1g11lfkzo
+    const myList = document.getElementById("myList");
+    myList.addEventListener("click", function (e) {
+      console.log(e.target);
+      let p = document.createElement("p");
+      let textNode = document.createTextNode(e.target.textContent);
+      p.appendChild(textNode);
+      document.body.appendChild(p);
+    });
+    let li = document.createElement("li");
+    li.textContent = "item 4";
+    myList.appendChild(li);
+  </script>
+</html>
