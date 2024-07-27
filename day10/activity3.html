@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="f1" />
+  </body>
+  <script>
+    //task5: Add a keydown event listener to an input field that logs key pressed to console.
+    const inText = document.getElementById("f1");
+    inText.addEventListener("keydown", (ev) => {
+      console.log(ev.key);
+    });
+  </script>
+</html>
