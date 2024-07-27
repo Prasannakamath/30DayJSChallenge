@@ -6,6 +6,12 @@
     <title>Document</title>
   </head>
   <body>
+    <select name="dropDown" id="dropDown">
+      <option value="val1">Value 1</option>
+      <option value="val2">Value 2</option>
+      <option value="val3">Value 3</option>
+      <option value="" selected>Select</option>
+    </select>
     <!-- form action is the endpoint where the form data will be sent on submit. -->
     <form id="loginForm">
       <label for="username">username</label>
@@ -42,6 +48,17 @@
       }
       username.value = "";
       password.value = "";
+    });
+
+    //task8: Add change event listener to a dropdown and display selected value in paragraph.
+    const dropDownList = document.getElementById("dropDown");
+    dropDownList.addEventListener("change", function (e) {
+      //   console.log(e);
+      console.log(e.target.value);
+      let p = document.createElement("p");
+      let textNode = document.createTextNode(e.target.value);
+      p.appendChild(textNode);
+      document.body.appendChild(p);
     });
   </script>
 </html>
