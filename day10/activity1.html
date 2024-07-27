@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Handling</title>
   </head>
+  <style>
+    .div-css {
+      border: 5px solid black;
+    }
+  </style>
   <body>
     <button id="btn">Click me</button>
     <p id="para">This is paragraph before click.</p>
+    <div class="div-css">
+      <img
+        src="img/shikamaru.jpg"
+        alt=""
+        id="shika"
+        height="200rem"
+        width="200rem"
+      />
+    </div>
   </body>
   <script>
     //task1: add a click event listener to a button that changes text of paragraph
@@ -15,6 +29,18 @@
     btnElement.addEventListener("click", (ev) => {
       document.getElementById("para").innerHTML =
         "This is a paragraph AFTER click.";
+    });
+
+    //task2: Add a double-click event listener to an image that toggles its visibility
+    const img = document.getElementById("shika");
+    const div = document.querySelector("div");
+    div.addEventListener("dblclick", (ev) => {
+      console.log(ev);
+      if (img.style.display !== "none") {
+        img.style.display = "none";
+      } else {
+        img.style.display = "block";
+      }
     });
   </script>
 </html>
