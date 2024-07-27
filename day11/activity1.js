@@ -11,3 +11,15 @@ console.log(`Wait for ${time / 1000} seconds for promise to resolve.`);
 delayMessage(time).then((msg) => {
   console.log(msg);
 });
+
+//task2: create a promise that rejects with error message after 2 second timeout.
+//log the message to console.
+function rejectPromise(time) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => reject("Promise is rejected."), time);
+  });
+}
+console.log(`Wait for ${time / 1000} seconds for promise to reject.`);
+rejectPromise(time)
+  .then((msg) => console.log(msg))
+  .catch((msg) => console.log(msg));
