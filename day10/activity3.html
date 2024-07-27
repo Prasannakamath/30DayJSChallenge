@@ -14,5 +14,15 @@
     inText.addEventListener("keydown", (ev) => {
       console.log(ev.key);
     });
+
+    //task6: add a keyup event listener to an input field that displays current value in paragraph.
+    inText.addEventListener("keyup", (ev) => {
+      console.log("keyup event handler");
+      //   console.log(ev);
+      let p = document.createElement("p");
+      p.textContent = document.getElementById("f1").value;
+      console.log(p);
+      document.body.appendChild(p);
+    });
   </script>
 </html>
