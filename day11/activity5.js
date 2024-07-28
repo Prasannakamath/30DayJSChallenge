@@ -29,3 +29,10 @@ Promise.all([promise1(time), promise2(time), promise3(time)]).then(
     console.log(returnArray);
   }
 );
+
+//task9: use 'promise.race' to log value of first promise that was resolved,
+//among multiple promises.
+console.log("promise.race called");
+Promise.race([promise1(time), promise2(time), promise3(time)]).then((value) =>
+  console.log(value)
+);
