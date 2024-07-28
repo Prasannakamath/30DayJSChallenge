@@ -10,3 +10,4 @@ this folder consists of the tasks I attempted as a part of ongoing 30 days javas
 - Day8: [ES6+ Features](day8/)
 - Day9: [DOM Manipulation](day9/)
 - Day10: [Event Handling](day10/)
+- Day11: [Promises and Async/Await](day11/)
