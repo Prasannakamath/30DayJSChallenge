@@ -15,3 +15,15 @@ function promise1() {
 promise1()
   .then((msg) => console.log(msg))
   .catch((err) => console.log(err));
+
+//task7: use try-catch with async function to handle errors from Promise that randomly resolves/rejects.
+//log the error message
+async function handlePromise() {
+  try {
+    console.log(await promise1());
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+handlePromise();
