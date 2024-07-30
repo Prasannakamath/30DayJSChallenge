@@ -13,3 +13,11 @@ class Person {
 
 const prasanna = new Person("Prasanna", 26);
 prasanna.greet();
+
+//task2: Add a method to Person class that updates age property.
+//log the updated age to console.
+Person.prototype.updateAge = function () {
+  console.log(this);
+  return ++this.age;
+};
+console.log(prasanna.updateAge());
