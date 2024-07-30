@@ -9,4 +9,7 @@ for (let [key, value] of Object.entries(math)) {
   console.log(value(a, b));
 }
 
-//task3: 
+//task4: create a module that exports single function as default export.
+//import the module and invoke the function.
+import df from "./defaultModule.js";
+df();
