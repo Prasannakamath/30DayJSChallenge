@@ -24,3 +24,13 @@ class Student extends Person {
 
 const student1 = new Student("Prasanna", 26, "male");
 console.log(student1.studentId);
+
+//task4: override greeting method in Student class to include studentId.
+//log the overriden greeting message.
+Student.prototype.greet = function () {
+  console.log(
+    `Hello ${this.name}. Your admission to LPU has been confirmed. Your student Id will be ${this.studentId}`
+  );
+};
+
+student1.greet();
