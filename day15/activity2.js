@@ -18,3 +18,14 @@ let studentId = generateUniqueId();
 let id1 = studentId.generate();
 console.log(id1);
 console.log(studentId.getLastGenNum());
+
+//task4: create closure that capture's username.
+//returns function that greets user by name.
+function captureUser(username) {
+  return function () {
+    console.log(`Hello ${username}, welcome to closure.`);
+  };
+}
+
+let user1 = captureUser("Jhon");
+user1();
