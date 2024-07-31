@@ -14,3 +14,15 @@ let arr = [2, 3, 5, 6, 9];
 console.log(binarySearch(arr, 3, 0, arr.length));
 console.log(binarySearch(arr, 9, 0, arr.length));
 console.log(binarySearch(arr, 0, 0, arr.length));
+
+//task8: recursive function to count frequency of target element in an array.
+//log result for few testcases.
+function freq(arr, ele) {
+  if (arr.length === 0) return 0;
+  return arr[0] === ele
+    ? 1 + freq(arr.splice(1, arr.length - 1), ele)
+    : freq(arr.splice(1, arr.length - 1), ele);
+}
+console.log(freq([2, 2, 2, 4, 5, 6], 2));
+console.log(freq([2, 2, 2, 4, 5, 6], 6));
+console.log(freq([2, 2, 2, 4, 5, 6], 61));
