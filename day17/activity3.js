@@ -23,10 +23,22 @@ let Q = new Queue();
 Q.enqueue(3);
 Q.enqueue(6);
 Q.enqueue(7);
-console.log(Q.showFront());
-console.log(Q.dequeue());
-console.log(Q.showFront());
+// console.log(Q.showFront());
+// console.log(Q.dequeue());
+// console.log(Q.showFront());
 Q.enqueue(8);
 Q.dequeue();
-console.log(Q.showFront());
-console.log(Q);
+// console.log(Q.showFront());
+// console.log(Q);
+
+//task6: use Queue to simulate printer Queue.
+//print jobs are added to Queue and processed in order
+
+let printerQ = new Queue();
+printerQ.enqueue("first Printer Job");
+printerQ.enqueue("Second printer job");
+printerQ.enqueue("third printer job");
+
+while (printerQ.showFront()) {
+  console.log(printerQ.dequeue());
+}
