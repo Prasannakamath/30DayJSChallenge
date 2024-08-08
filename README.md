@@ -17,3 +17,4 @@ this folder consists of the tasks I attempted as a part of ongoing 30 days javas
 - Day15: [Closures](day15/)
 - Day16: [Recursion](day16/)
 - Day17: [Data Structures](day17/)
+- Day18: [Algorithms](day18/)
