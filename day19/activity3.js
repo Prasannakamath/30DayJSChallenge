@@ -13,3 +13,17 @@ function splitMobileNumber(mobNo) {
 }
 let str = "(123) 4567-8901";
 console.log(splitMobileNumber(str));
+
+//task6: regex to capture username and domain from email address.
+function decodeEmailAdd(email) {
+  let pattern = /^([\w.-]+)@([\w.-]{2,})$/;
+  let match = email.match(pattern);
+  if (match) {
+    return {
+      username: match[1],
+      domain: match[2],
+    };
+  }
+}
+let email = "jhon.doe@gmail-test.com";
+console.log(decodeEmailAdd(email));
