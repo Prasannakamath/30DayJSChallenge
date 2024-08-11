@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage and Session Storage Activity5</title>
+  </head>
+  <body></body>
+  <script>
+    //task9: write a function that accepts key and value and stores in both local and session storage.
+    //retrive and log them to console.
+    function store(key, value) {
+      localStorage.setItem(key, value);
+      sessionStorage.setItem(key, value);
+      console.log(localStorage.getItem(key));
+      console.log(sessionStorage.getItem(key));
+    }
+    setTimeout(() => {
+      store("time", new Date());
+    }, 2000);
+  </script>
+</html>
