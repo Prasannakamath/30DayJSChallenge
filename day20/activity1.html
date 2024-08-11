@@ -10,5 +10,13 @@
     //task1: store a string value in localstorage. retrive the value from local storage and log to console.
     localStorage.setItem("key1", "value1");
     console.log(localStorage.getItem("key1"));
+
+    //task2: storage an Object as string in localstorage. retrive and log its value to console.
+    let user = {
+      name: "Jhon",
+      age: 30,
+    };
+    localStorage.setItem("user", JSON.stringify(user));
+    console.log(localStorage.getItem("user"));
   </script>
 </html>
