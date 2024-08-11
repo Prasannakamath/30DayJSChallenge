@@ -19,3 +19,4 @@ this folder consists of the tasks I attempted as a part of ongoing 30 days javas
 - Day17: [Data Structures](day17/)
 - Day18: [Algorithms](day18/)
 - Day19: [Regular Expressions](day19/)
+- Day20: [Local and Session Storage](day20/)
