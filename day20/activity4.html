@@ -37,5 +37,11 @@
       div.appendChild(password);
       document.body.appendChild(div);
     }
+
+    //task8: remove an item from session storage and log session storage before and after removal.
+    sessionStorage.setItem("dummy", "dummy");
+    console.log(sessionStorage);
+    sessionStorage.removeItem("dummy");
+    console.log(sessionStorage);
   </script>
 </html>
