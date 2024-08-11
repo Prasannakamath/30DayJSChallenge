@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage and Session Storage Activity2</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="email">UserName: </label>
+      <input type="text" name="email" id="username" /><br />
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" /><br />
+      <input type="submit" value="submit" id="submitBtn" />
+    </form>
+  </body>
+  <script>
+    //task3: create simple form that stores user input to localstorage when submitted.
+    //retrive and display saved data on page reload.
+    let submit = document.getElementById("submitBtn");
+    submit.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      let data = {
+        username: document.getElementById("username").value,
+        password: document.getElementById("password").value,
+      };
+      localStorage.setItem("data", JSON.stringify(data));
+      displayData();
+    });
+    function displayData() {
+      let div = document.createElement("div");
+      let username = document.createElement("p");
+      let password = document.createElement("p");
+      let data = JSON.parse(localStorage.getItem("data"));
+      username.innerHTML = data.username;
+      password.innerHTML = data.password;
+      div.appendChild(username);
+      div.appendChild(password);
+      document.body.appendChild(div);
+    }
+  </script>
+</html>
