@@ -38,5 +38,12 @@
       div.appendChild(password);
       document.body.appendChild(div);
     }
+
+    //task4: script to remove an item from localstorage.
+    //log localstorage data before and after removal.
+    localStorage.setItem("dummy", "dummy");
+    console.log(localStorage);
+    localStorage.removeItem("dummy");
+    console.log(localStorage);
   </script>
 </html>
