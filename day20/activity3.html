@@ -10,5 +10,14 @@
     //task5: save string value to sessionStorage and retrive it to console.
     sessionStorage.setItem("key", "value");
     console.log(sessionStorage.getItem("key"));
+
+    //task6: save Object to session storage as string.
+    //retrive and parse the Object to console.
+    let data = {
+      name: "Jhon",
+      email: "jhon.doe@gmail.com",
+    };
+    sessionStorage.setItem("data", JSON.stringify(data));
+    console.log(JSON.parse(sessionStorage.getItem("data")));
   </script>
 </html>
